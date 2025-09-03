@@ -1,0 +1,20 @@
+# --- Core Framework ---
+Flask==3.0.3
+
+# --- Database ---
+SQLAlchemy==2.0.30          # ORM para manejar BD
+psycopg2-binary==2.9.9      # Conexión con PostgreSQL en la nube (Supabase/Railway)
+# SQLite ya viene con Python, no se instala aparte
+
+# --- Seguridad / Autenticación ---
+Flask-Login==0.6.3          # Manejo de sesiones y login
+Werkzeug==3.0.2             # Hash de contraseñas y utilidades de seguridad
+
+# --- Utilidades ---
+python-dotenv==1.0.1        # Para cargar variables de entorno (.env)
+
+# --- Testing (opcional) ---
+pytest==8.2.0
+
+# --- Despliegue ---
+gunicorn==22.0.0            # Servidor WSGI para producción en Render/Railway
